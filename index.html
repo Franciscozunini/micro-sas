@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de importación a Argentina — cuánto te sale traerlo | ImportáAR</title>
+  <meta name="description" content="Calculá gratis y sin registro cuánto te sale traer un producto del exterior a Argentina por el régimen de Pequeños Envíos/Courier. Franquicia de USD 400, honesta sobre lo que no se calcula.">
+  <link rel="canonical" href="https://importar.ar/">
+  <meta name="theme-color" content="#0a6cff">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ImportáAR">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="¿Cuánto te sale traerlo a Argentina? — Calculadora de importación">
+  <meta property="og:description" content="Régimen de Pequeños Envíos/Courier. Gratis, sin registro, y honesta sobre qué impuestos no se calculan automáticamente.">
+  <meta property="og:url" content="https://importar.ar/">
+  <meta property="og:image" content="https://importar.ar/assets/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- TODO (dueño del sitio): agregar aquí el script de tu CMP de cookies antes de activar AdSense. -->
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="/styles.css?v=20260902">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ImportáAR — Calculadora de importación a Argentina",
+    "url": "https://importar.ar/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "description": "Calculadora del costo estimado de importar un producto a Argentina por el régimen de Pequeños Envíos/Courier.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ARS" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿La franquicia de USD 400 se mide sobre el precio total o sobre el producto?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Se mide sólo sobre el valor FOB (el precio de la mercadería, sin envío ni seguro). El flete no cuenta para la franquicia." } },
+      { "@type": "Question", "name": "¿La calculadora me dice el monto exacto de impuestos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Calcula con precisión lo que se puede calcular de forma confiable (franquicia, CIF, excedente) y es explícita sobre qué tributos corresponden pero no se calculan automáticamente, en lugar de inventar un número." } },
+      { "@type": "Question", "name": "¿Necesito registrarme o pagar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Es gratis, sin registro y sin login. Todo el cálculo ocurre en tu navegador; no guardamos tus datos." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#calculadora">Saltar a la calculadora</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 3 21 7.2 12 11.4 3 7.2 12 3Z"/><path d="M3 7.2V17l9 4.2 9-4.2V7.2"/><path d="M12 11.4v10"/></svg></span>
+        ImportáAR
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="/calculadora-importacion-argentina/">Calculadora</a>
+        <a href="/que-es-la-franquicia-de-400-dolares/">Franquicia USD 400</a>
+        <a href="/impuestos-compras-exterior-argentina/">Impuestos</a>
+        <a class="nav-cta" href="#calculadora">Calcular ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO + CALCULADORA -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Régimen Pequeños Envíos / Courier</span>
+            <h1>¿Cuánto te termina saliendo <span class="hl">traerlo a Argentina</span>?</h1>
+            <p class="hero-lead">Poné los datos de tu compra en Amazon, AliExpress, Temu, Shein o eBay y calculá el costo estimado puesto en Argentina — antes de comprar.</p>
+            <ul class="hero-points">
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Gratis, sin registro y sin login.</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Aplica la franquicia de USD 400 <strong>sobre el valor del producto</strong>, no sobre el total.</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Honesta: te dice qué <strong>no</strong> puede calcular, en vez de inventar un número.</li>
+            </ul>
+          </div>
+
+          <div id="calculadora" class="tool-card">
+            <div class="tool-head">
+              <h2>Calculadora de costo de importación</h2>
+              <p>Completá los datos de tu compra. El cálculo es instantáneo y ocurre en tu dispositivo.</p>
+            </div>
+            <div data-calc></div>
+            <noscript>
+              <p class="noscript-msg">Esta calculadora necesita JavaScript activado para funcionar. Igual podés leer más abajo cómo se calcula el costo de importación paso a paso.</p>
+            </noscript>
+            <div class="trust-row">
+              <span class="trust-badge"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 100% privado</span>
+              <span class="trust-badge"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> No guardamos tus datos</span>
+              <span class="trust-badge"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Sin cotización automática</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Anuncio: DEBAJO de la herramienta, nunca antes de poder usarla. -->
+        <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"><span>Publicidad</span><!-- PEGA AQUÍ TU CÓDIGO DE ADSENSE --></div>
+      </div>
+    </section>
+
+    <!-- QUÉ HACE -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>No es una calculadora de impuestos más</h2>
+          <p>Es una herramienta de decisión de compra. Calcula con precisión lo que se puede calcular de forma confiable y es transparente con el resto — su valor está en la honestidad, no en tirar una cifra sin explicar qué incluye.</p>
+        </div>
+        <div class="card-grid">
+          <div class="link-card">
+            <span class="lc-tag">Lo que sí calcula</span>
+            <h3>Franquicia, CIF y excedente</h3>
+            <p>Compara tu valor FOB contra la franquicia de USD 400, arma el valor CIF (FOB + flete + seguro) y te muestra el excedente exacto si lo hay.</p>
+          </div>
+          <div class="link-card">
+            <span class="lc-tag">Lo que no inventa</span>
+            <h3>Alícuotas que varían</h3>
+            <p>Derecho de importación, tasa estadística, IVA e impuestos internos dependen de la categoría del producto. Cuando corresponden pero su alícuota no está verificada, lo decimos — no ponemos un número falso.</p>
+          </div>
+          <div class="link-card">
+            <span class="lc-tag">Lo que decidís vos</span>
+            <h3>¿Conviene o no?</h3>
+            <p>Cargá el precio del mismo producto en Argentina y te mostramos un semáforo 🟢🟡🔴 con la comparación de conveniencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section style="background:var(--surface-2)">
+      <div class="container">
+        <div class="section-head">
+          <h2>Cómo funciona, en 3 pasos</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Separá producto y envío</h3>
+            <p>Ingresá el <strong>valor FOB</strong> (el precio de la mercadería, sin el envío) y el <strong>flete</strong> por separado. Es la distinción clave: la franquicia mira sólo el FOB.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Sumá los detalles</h3>
+            <p>Cantidad, peso y, si querés, seguro, gastos del courier y la cotización del dólar que vos elijas. Nada se consulta online.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Leé la estimación honesta</h3>
+            <p>Ves el estado de la franquicia, el desglose línea por línea, el costo estimado en USD y ARS, y qué tributos quedan por confirmar con tu courier o ARCA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO ÚTIL / SEO -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Guías para comprar afuera y traer a Argentina</h2>
+          <p>Cada guía suma algo real: ejemplos numéricos, particularidades de cada tienda y cómo leer la franquicia en tu caso.</p>
+        </div>
+        <div class="card-grid">
+          <a class="link-card" href="/comprar-en-amazon-y-traer-a-argentina/"><span class="lc-tag">Tienda</span><h3>Comprar en Amazon</h3><p>Cómo separar producto y envío en tu carrito de Amazon y estimar el costo puesto en Argentina.</p><span class="lc-more">Leer guía →</span></a>
+          <a class="link-card" href="/comprar-en-aliexpress-y-traer-a-argentina/"><span class="lc-tag">Tienda</span><h3>Comprar en AliExpress</h3><p>Envíos baratos, muchos ítems iguales y el tope de 3 unidades: qué mirar antes de pagar.</p><span class="lc-more">Leer guía →</span></a>
+          <a class="link-card" href="/comprar-en-temu-y-traer-a-argentina/"><span class="lc-tag">Tienda</span><h3>Comprar en Temu</h3><p>Carritos de muchos productos chicos: cómo pensar el FOB total y el régimen courier.</p><span class="lc-more">Leer guía →</span></a>
+          <a class="link-card" href="/comprar-en-shein-y-traer-a-argentina/"><span class="lc-tag">Tienda</span><h3>Comprar en Shein</h3><p>Ropa y accesorios: unidades de la misma especie, peso y franquicia de USD 400.</p><span class="lc-more">Leer guía →</span></a>
+          <a class="link-card" href="/que-es-la-franquicia-de-400-dolares/"><span class="lc-tag">Concepto</span><h3>La franquicia de USD 400</h3><p>Qué es, por qué se mide sobre el FOB y no sobre el CIF, y cómo se usa el excedente.</p><span class="lc-more">Leer guía →</span></a>
+          <a class="link-card" href="/impuestos-compras-exterior-argentina/"><span class="lc-tag">Concepto</span><h3>Impuestos de compras al exterior</h3><p>Qué tributos existen, cuáles dependen del producto y por qué no siempre se pueden calcular de antemano.</p><span class="lc-more">Leer guía →</span></a>
+          <a class="link-card" href="/cuanto-cuesta-traer-una-notebook/"><span class="lc-tag">Ejemplo</span><h3>Traer una notebook</h3><p>Ejemplo numérico completo con la calculadora embebida.</p><span class="lc-more">Ver ejemplo →</span></a>
+          <a class="link-card" href="/cuanto-cuesta-traer-un-celular/"><span class="lc-tag">Ejemplo</span><h3>Traer un celular</h3><p>Cómo queda un smartphone de gama media dentro (o fuera) de la franquicia.</p><span class="lc-more">Ver ejemplo →</span></a>
+          <a class="link-card" href="/cuanto-cuesta-traer-una-ps5/"><span class="lc-tag">Ejemplo</span><h3>Traer una PS5</h3><p>Consola grande y pesada: qué pasa con el flete y el excedente.</p><span class="lc-more">Ver ejemplo →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background:var(--surface-2)">
+      <div class="container">
+        <div class="section-head"><h2>Preguntas frecuentes</h2></div>
+        <div class="faq">
+          <details><summary>¿La franquicia de USD 400 se mide sobre el total o sobre el producto?</summary><div><p>Sólo sobre el <strong>valor FOB</strong>: el precio de la mercadería, sin incluir el envío ni el seguro. Por eso la calculadora te pide el FOB y el flete por separado. Si comprás un producto de USD 380 con USD 200 de envío, el CIF es USD 580 pero seguís <strong>dentro</strong> de la franquicia, porque el FOB (380) es menor a 400.</p></div></details>
+          <details><summary>¿Por qué no me dice el monto exacto de IVA o de derecho de importación?</summary><div><p>Porque esas alícuotas dependen de la categoría del producto y pueden variar. Preferimos ser honestos: te mostramos qué corresponde y qué no se calcula automáticamente, en lugar de inventar un porcentaje que te dé una cifra falsa de tranquilidad. Para el monto final exacto, consultá con tu courier o con ARCA.</p></div></details>
+          <details><summary>¿Cuántos envíos puedo hacer por año?</summary><div><p>El régimen de Pequeños Envíos/Courier permite hasta <strong data-const="MAX_ENVIOS_ANIO">5</strong> envíos por persona por año. Como la herramienta no tiene cuentas ni historial, no puede validar ese límite: te lo mostramos como aviso informativo.</p></div></details>
+          <details><summary>¿De dónde saca la cotización del dólar?</summary><div><p>De ningún lado automático: la ponés vos. No llamamos a ninguna cotización online. Si dejás el campo vacío, te mostramos el resultado sólo en dólares.</p></div></details>
+          <details><summary>¿Guardan mis datos?</summary><div><p>No. Todo el cálculo ocurre en tu navegador. No hay servidor propio, no hay base de datos y no se envía nada a ningún lado.</p></div></details>
+          <details><summary>¿Sirve para cualquier compra?</summary><div><p>Cubre el régimen de Pequeños Envíos/Courier, con tope de USD <span data-const="TOPE_FOB_USD">3.000</span> FOB por envío. Si tu compra supera ese tope, la herramienta te avisa que queda fuera de alcance y no fuerza un cálculo.</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/"><span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 3 21 7.2 12 11.4 3 7.2 12 3Z"/><path d="M3 7.2V17l9 4.2 9-4.2V7.2"/><path d="M12 11.4v10"/></svg></span>ImportáAR</a>
+          <p>Calculadora gratuita y sin registro del costo de importar por el régimen de Pequeños Envíos/Courier en Argentina. Estimación informativa, no asesoría fiscal ni aduanera.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Herramienta</h4>
+          <ul>
+            <li><a href="/calculadora-importacion-argentina/">Calculadora</a></li>
+            <li><a href="/que-es-la-franquicia-de-400-dolares/">Franquicia USD 400</a></li>
+            <li><a href="/impuestos-compras-exterior-argentina/">Impuestos de importación</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Guías y ejemplos</h4>
+          <ul>
+            <li><a href="/comprar-en-amazon-y-traer-a-argentina/">Amazon</a></li>
+            <li><a href="/comprar-en-aliexpress-y-traer-a-argentina/">AliExpress</a></li>
+            <li><a href="/cuanto-cuesta-traer-una-notebook/">Traer una notebook</a></li>
+            <li><a href="/cuanto-cuesta-traer-una-ps5/">Traer una PS5</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-anio>2026</span> ImportáAR · Estimación informativa, no asesoría fiscal ni aduanera.</span>
+        <span><a href="/privacidad/">Privacidad</a> · <a href="/aviso-legal/">Aviso legal</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="/js/calculo.js?v=20260902"></script>
+  <script defer src="/js/datos.js?v=20260902"></script>
+  <script defer src="/js/ui.js?v=20260902"></script>
+</body>
+</html>

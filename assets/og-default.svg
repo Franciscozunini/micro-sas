@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2440"/>
+      <stop offset="1" stop-color="#0653cf"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d94ff"/>
+      <stop offset="1" stop-color="#0a6cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="90" r="320" fill="#4d94ff" opacity="0.14"/>
+  <g transform="translate(90,120)">
+    <rect width="64" height="64" rx="16" fill="url(#mark)"/>
+    <g fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(11,11) scale(1.75)">
+      <path d="M12 3 21 7.2 12 11.4 3 7.2 12 3Z"/>
+      <path d="M3 7.2V17l9 4.2 9-4.2V7.2"/>
+      <path d="M12 11.4v10"/>
+    </g>
+    <text x="82" y="44" font-family="Space Grotesk, Arial, sans-serif" font-size="40" font-weight="700" fill="#fff">ImportáAR</text>
+  </g>
+  <text x="90" y="330" font-family="Space Grotesk, Arial, sans-serif" font-size="66" font-weight="700" fill="#fff">¿Cuánto te sale traerlo</text>
+  <text x="90" y="405" font-family="Space Grotesk, Arial, sans-serif" font-size="66" font-weight="700" fill="#fff">a Argentina?</text>
+  <text x="90" y="475" font-family="Inter, Arial, sans-serif" font-size="30" fill="#b3c1d6">Calculadora del régimen de Pequeños Envíos / Courier</text>
+  <g transform="translate(90,520)">
+    <rect width="330" height="58" rx="29" fill="#12924b"/>
+    <text x="165" y="38" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#fff">Gratis · sin registro</text>
+  </g>
+  <g transform="translate(440,520)">
+    <rect width="360" height="58" rx="29" fill="rgba(255,255,255,0.12)"/>
+    <text x="180" y="38" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#fff">Franquicia USD 400 FOB</text>
+  </g>
+</svg>
